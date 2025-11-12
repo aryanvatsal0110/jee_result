@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JEE Main Result Portal</title>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background: rgba(255,255,255,0.1);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        text-align: center;
+        width: 350px;
+    }
+    h2 { margin-bottom: 20px; }
+    input {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    button {
+        padding: 10px 20px;
+        background: #ffb703;
+        border: none;
+        color: black;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover { background: #ffd166; }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h2>JEE MAIN RESULT LOGIN</h2>
+        <form action="login.php" method="POST">
+            <input type="text" name="roll_number" placeholder="Enter Roll Number" required><br>
+            <input type="date" name="dob" required><br>
+            <button type="submit">View Result</button>
+        </form>
+    </div>
+</body>
+</html>
