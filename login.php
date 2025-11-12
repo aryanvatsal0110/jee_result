@@ -1,8 +1,12 @@
 <?php
-$servername = "sql103.infinityfree.com";  // your InfinityFree server
-$username = "if0_40385131";                 // your username
-$password = "DFkQPd5PkYioO";               // your password
-$database = "if0_40385131_jee_db";          // your database name
+
+<?php
+$DB_HOST = 'sqlXXX.infinityfree.com';
+$DB_USER = 'if0_xxxxxx';
+$DB_PASS = 'REPLACE_WITH_REAL_PASSWORD';
+$DB_NAME = 'if0_xxxxxx_jee_db';
+?>
+
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 if (!$conn) { die("Connection failed: " . mysqli_connect_error()); }
@@ -26,3 +30,4 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($conn);
 ?>
+
